@@ -1,0 +1,143 @@
+@media screen and (max-width: 1220px) {
+  /*****************************************/
+  /***************** col main ****************/
+  /****************************************/
+
+  .col2 {
+    padding: 10px;
+  }
+
+  /*****************************************/
+  /***************** CEO ****************/
+  /****************************************/
+
+  .ceo1 {
+    background-image: url("images/home-company-heads-01-b86508e5.webp");
+    background-position: center;
+  }
+  .ceo2 {
+    background-image: url("images/home-company-heads-02-49b0b781.webp");
+    background-position: center;
+  }
+  .ceo3 {
+    background-image: url("images/home-company-heads-03-1903dd5d.webp");
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  h2 {
+    color: #fff;
+    font-size: 26px;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+  }
+
+  header .menu .list {
+    justify-content: space-between;
+  }
+
+  footer .client,
+  .banner {
+    height: 400px;
+  }
+
+  .banner.immeuble {
+    background-position: center;
+    background-size: contain;
+  }
+
+  .activity {
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  .activity .border {
+    padding: 20px;
+  }
+
+  .activity p {
+    font-size: 15px;
+  }
+
+  .col.num {
+    flex-direction: column;
+  }
+
+  .ceo1 .hoverTxt,
+  .ceo2 .hoverTxt,
+  .ceo3 .hoverTxt {
+    opacity: 0.8;
+  }
+
+  .hoverTxt .texte p {
+    font-size: 16px;
+  }
+
+  footer .client {
+    height: 380px;
+    padding: 40px 0;
+  }
+
+  footer .partner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px 80px 80px 80px;
+    gap: 10px;
+  }
+
+  .contentPartner {
+  padding: 0;
+}
+
+  footer .gridMenus {
+    padding: 40px;
+  }
+
+  .contenantColMenus {
+    margin: 0;
+  }
+
+  .contenantMenus {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .client {
+  height: 700px;
+  }
+  footer h2 {
+    font-size: 36px;
+  }
+
+
+footer .partner {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 90px 90px 90px 90px 90px 90px;
+  padding: 0;
+}
+
+.banner.phone .col2 {
+  margin: 0;
+}
+
+
+.lien {
+  display: none;
+}
+
+.lien2 {
+  display: block;
+}
+
+.lien2 a:last-of-type{
+  background-color: transparent;
+  border: transparent;
+}
+
+
+}

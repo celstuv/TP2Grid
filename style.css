@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-weight: 400;
+}
+
+.container {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "header header header header header header"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+  width: 100%;
+  align-self: center;
+}
+
+.container2 {
+  margin: 15px;
+  background-image: #fff;
+}
+a {
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+  font-size: 36px;
+}
+
+span {
+  color: #fff;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  margin-top: -15px;
+  margin-bottom: 35px;
+}
+
+header {
+  position: relative;
+  /* background-color: lightpink; */
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header .logo {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+header .menu .list {
+  display: flex;
+}
+
+header .menu .list {
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+header a {
+  color: #000;
+}
+
+.list li:hover,
+.dropButton:hover,
+a:hover {
+  color: #b7a088;
+}
+
+/* menus ul déroulant */
+.dropdown {
+  border: none;
+}
+
+.dropButton {
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: auto;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff;
+  color: #b7a088;
+}
+
+.dropdown-content a {
+  color: #6c6d74;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: left;
+  background-color: #fff;
+}
+
+.contact a {
+  border: 1px solid #1e3684;
+  background-color: #1e3684;
+  color: #fff;
+  border-radius: 15px;
+  padding: 6px 25px 6px 25px;
+}
+.contact a:hover {
+  color: #1e3684;
+  background-color: #fff;
+}
+
+main {
+  /* background-color: lightseagreen; */
+  grid-area: main;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: 100%;
+}
+
+/**************************************************/
+/***************** Banner Montre ****************/
+/**************************************************/
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 0;
+  height: 700px;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 40px;
+  padding-left: 150px;
+}
+
+.banner.montre {
+  background-image: url("images/home-hero-5c89fc46.webp");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.phone .col2,
+.montre .col2 {
+  background-color: #1e3684;
+}
+
+/**************************************************/
+/******************** Activty *******************/
+/**************************************************/
+.activity {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.activity .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.activity .border {
+  margin: 10px;
+}
+
+.activity .border:hover {
+  box-shadow: 1px 1px 21px 2px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 1px 1px 21px 2px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 1px 1px 21px 2px rgba(0, 0, 0, 0.68);
+}
+
+.activity p {
+  font-size: 20px;
+  color: #2d2e33;
+}
+
+.activity p:nth-child(3) {
+  color: #6c6d74;
+}
+
+/**************************************************/
+/***************** Banners Immeuble ****************/
+/**************************************************/
+.banner.immeuble {
+  background-image: url("images/home-company-bg-0adc10f2.webp");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/**************************************************/
+/************************ CEO *********************/
+/**************************************************/
+.ceo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #fff;
+}
+
+.ceo1,
+.ceo2,
+.ceo3 {
+  position: relative;
+}
+
+.ceo1 {
+  background-image: url("images/home-company-heads-01-b86508e5.webp");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+.ceo2 {
+  background-image: url("images/home-company-heads-02-49b0b781.webp");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+.ceo3 {
+  background-image: url("images/home-company-heads-03-1903dd5d.webp");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+}
+
+.ceo1 .hoverTxt,
+.ceo2 .hoverTxt,
+.ceo3 .hoverTxt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left;
+}
+
+.ceo1 .hoverTxt .texte,
+.ceo2 .hoverTxt .texte,
+.ceo3 .hoverTxt .texte {
+  background-color: #1e3276;
+  margin: 15px;
+  padding: 20px;
+}
+
+.hoverTxt .texte p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.hoverTxt .texte span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hoverTxt:hover {
+  opacity: 1;
+}
+
+/**************************************************/
+/****************** Banner choose ******************/
+/**************************************************/
+.banner.choose {
+  background-color: #fff;
+}
+
+.choose .col.num {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.col.num p {
+  font-size: 120px;
+  color: #b7a088;
+  margin: 0;
+}
+.col.num span {
+  font-size: 18px;
+  color: #a3a4a8;
+}
+
+/******* point commun au 3 banners *******/
+
+.phone a,
+.choose a,
+.immeuble a,
+.montre a {
+  border: 1px solid #b7a088;
+  background-color: #b7a088;
+  width: 115px;
+  color: #fff;
+  border-radius: 15px;
+  padding: 6px 25px 6px 25px;
+}
+
+.phone a:hover,
+.choose a:hover,
+.immeuble a:hover,
+.montre a:hover {
+  color: #b7a088;
+  background-color: #fff;
+}
+
+.banner.choose h2,
+.banner.immeuble h2 {
+  color: #2d2e33;
+}
+
+.client h2,
+.banner.choose span,
+.banner.immeuble span {
+  color: #b7a088;
+}
+
+/**************************************************/
+/****************** Banner phone ******************/
+/**************************************************/
+
+.banner.phone .col1 {
+  background-image: url("images/home-contact-01-8d8f3819.webp");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner.phone .lien a:nth-child(2) {
+  background-color: transparent;
+  border: transparent;
+}
+
+.lien {
+  display: block;
+}
+
+.lien2{
+  display: none;
+}
+
+/**************************************************/
+/****************** footer ******************/
+/**************************************************/
+
+footer {
+  grid-area: footer;
+  background-color: #1e3276;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+
+/*****************************************/
+/***************** Client ****************/
+/****************************************/
+
+footer .client {
+  height: 500px;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentPartner {
+  padding: 0 140px;
+}
+
+footer .partner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 50px;
+  gap: 20px;
+  padding: 0 60px;
+}
+
+footer .partner .items1 {
+  background-image: url("images/home-clients-01.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer .partner .items2 {
+  background-image: url("images/home-clients-02.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer .partner .items3 {
+  background-image: url("images/home-clients-03.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .partner .items4 {
+  background-image: url("images/home-clients-04.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer .partner .items5 {
+  background-image: url("images/home-clients-05.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer .partner .items6 {
+  background-image: url("images/home-clients-06.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer .partner .items7 {
+  background-image: url("images/home-clients-07.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer .partner .items8 {
+  background-image: url("images/home-clients-08.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*****************************************/
+/***************** gridMenus ****************/
+/****************************************/
+footer .gridMenus {
+  padding: 140px;
+}
+
+.contenantColMenus {
+  margin: 0 86px;
+}
+
+.contenantMenus {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+}
+
+footer .listFooter h4 {
+  color: #fff;
+}
+
+footer .menus ul {
+  list-style: none;
+}
+
+.listFooter li {
+  padding-bottom: 10px;
+}
+
+footer .menus ul li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/*****************************************/
+/***************** footer col ****************/
+/****************************************/
+
+footer .terms {
+  color: rgba(255, 255, 255, 0.8);
+  align-self: center;
+}
+
+footer .terms:hover {
+  color: #fff;
+}
+
+footer .terms p {
+  font-size: 12px;
+}
+
+/*****************************************/
+/***************** footer arrow ****************/
+/****************************************/
+footer .terms a img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  border: 1px solid #b7a088;
+  background-color: #b7a088;
+  border-radius: 15px;
+  padding: 6px 5px 6px 5px;
+}
