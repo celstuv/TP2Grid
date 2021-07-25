@@ -27,4 +27,6 @@ Relative / absolute
 Grid
 position Flexbox
 
-Voire le résultat ici / view result here : 
+
+
+Voire le résultat ici / view result here : https://celstuv.github.io/Template-morgan-consulting/
